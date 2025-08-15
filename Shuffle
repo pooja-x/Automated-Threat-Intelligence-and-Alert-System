@@ -1,0 +1,46 @@
+- TheHive Advanced Body:-
+
+{
+  "description": "Mimikatz detected on Computer: $exec.text.win.system.computer from User: $exec.text.win.eventdata.user IP: $exec.all_fields.agent.ip", 
+  "externallink": "${externallink}",
+  "flag": false,
+  "pap": 2,
+  "severity": "2",
+  "source": "Wazuh",
+  "sourceRef": "Rule: 100002",
+  "status": "New",
+  "summary": "Mimikatz detected on Computer: $exec.text.win.system.computer, ProcessID: $exec.text.win.system.processID and CommandLine: $exec.text.win.eventdata.commandLine",
+  "tags": ["T1003"],
+  "title": "$exec.title",
+  "tlp": 2,
+  "type": "Internal"
+}
+
+______________________________________________________________________________________________________________________________________________________________________________________________
+
+
+- Email Advanced Body:-
+
+{
+  "description": "Mimikatz detected on Computer: $exec.text.win.system.computer from User: $exec.text.win.eventdata.user, IP: $exec.all_fields.agent.ip",  
+  "externallink": "${externallink}",
+  "flag": false,
+  "pap": 2,
+  "severity": "2",
+  "source": "Wazuh",
+  "sourceRef": "Rule: 100002",
+  "status": "New",
+  "summary": "Mimikatz detected on Computer: $exec.text.win.system.computer, ProcessID: $exec.text.win.system.processID and CommandLine: $exec.text.win.eventdata.commandLine",
+  "tags": ["T1003"],
+  "title": "$exec.title",
+  "tlp": 2,
+  "type": "Internal"
+}
+
+_________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+Time:$exec.text.win.eventdata.utcTime
+Title: $exec.title
+Host: $exec.text.win.system.computer
+IP: $exec.all_fields.agent.ip
