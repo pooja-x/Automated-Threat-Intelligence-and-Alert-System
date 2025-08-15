@@ -1,9 +1,4 @@
 # Automated-Threat-Intelligence-and-Alert-System
 
 
-The Automated Threat Intelligence and Alert System continuously monitors logs using Wazuh, for real-time threat detection. 
-When a suspicious indicator like file hash or an IP (e.g. Mimikatz) is found, it’s checked via OSINT tools like VirusTotal. 
-If confirmed malicious, an alert is generated and an incident is created in TheHive. 
-Shuffle automates the workflow from detection to enrichment and response. 
-If Mimikatz is detected, the system treats it as a threat and sends an email to the SOC analyst to confirm IP blocking via a response script, enabling quick yet controlled action. 
-
+In an era where cyber threats are becoming increasingly sophisticated, organizations require security systems that can detect and respond to attacks instantly. This project presents an Automated Threat Detection and Response System that leverages powerful open-source tools to provide real-time monitoring, verification, and incident management. Wazuh continuously scans system logs to identify suspicious indicators such as malicious IP addresses or file hashes, which are then cross-checked with VirusTotal for threat validation. Once a threat is confirmed, an incident is automatically created in TheHive, enabling structured investigation and tracking. The workflow is fully orchestrated using Shuffle, ensuring seamless integration between detection, enrichment, and response processes. Deployed on AWS for scalability and reliability, the system also incorporates a controlled action mechanism — sending an email to SOC analysts for IP blocking approval, thereby balancing automation speed with human oversight.
